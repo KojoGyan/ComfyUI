@@ -6,7 +6,9 @@
 a111:
     base_path: path/to/stable-diffusion-webui/
 
-    checkpoints: models/Stable-diffusion
+    checkpoints: |
+                models/Stable-diffusion
+                /kaggle/temp/models
     configs: models/Stable-diffusion
     vae: models/VAE
     loras: |
@@ -18,7 +20,9 @@ a111:
                   models/SwinIR
     embeddings: embeddings
     hypernetworks: models/hypernetworks
-    controlnet: models/ControlNet
+    controlnet: |
+            models/ControlNet
+            /kaggle/temp/cnmodels
 
 #config for comfyui
 #your base path should be either an existing comfy install or a central folder where you store all of your models, loras, etc.
